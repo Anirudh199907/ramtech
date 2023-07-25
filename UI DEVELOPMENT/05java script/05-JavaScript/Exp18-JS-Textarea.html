@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Textarea Button Validation</title>
+</head>
+<body>
+  <h1>Textarea Button Validation</h1>
+  <form action="Success.html" id="textareaForm" onsubmit="return validateForm()">
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validateForm() {
+      const messageInput = document.getElementById('message');
+      const message = messageInput.value;
+
+      // Check if the textarea is empty
+      if (message.trim() === "") {
+        alert("Please enter a message.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>

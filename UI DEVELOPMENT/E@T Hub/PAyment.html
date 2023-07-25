@@ -1,0 +1,119 @@
+<html>
+    <head>
+      <title>Bootstrap Example</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <style>
+        
+        .anirudh{
+          width: 100%;
+           height: 100%;
+           padding: auto;
+            background-image: url(Bootstrap_1000\ \(1\).gif);
+        }
+        h1{
+          color: #ffffff;
+        }
+        p{
+          color: #ffffff;
+        }
+        </style>
+       <script>
+        
+function andy(form){
+  var uname= form.uname.value;
+  var Cnum= form.Cnum.value;
+  var month= form.month.value;
+  var pass= form.pass.value;
+  var Address= form.Address.value;
+  var Fullname= form.Fullname.value;
+  var Amount= form.Amount.value;
+
+  if (uname.length===0){
+    alert("Enter name")
+    return false
+  }
+  if (Cnum.length===0){
+    alert("Enter Cnum")
+    return false
+  }
+  if (month.length===0){
+    alert("Enter month")
+    return false
+  } if (pass.length===0){
+    alert("Enter password")
+    return false
+  } if (Address.length===0){
+    alert("Enter Address")
+    return false
+  } if (Fullname.length===0){
+    alert("Enter Full name")
+    return false
+  }
+  if (Amount.length===0){
+    alert("Amount")
+    return false
+  }
+}      
+    </script>
+   
+   </head>
+    <body>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img src="eat.jpg" alt="" width="80" height="50" class="d-inline-block align-text-top"> E@T Hub </a>           
+         </div>  
+
+      <div class="anirudh">
+        <br><br><br><br><br><br><br><br>
+        
+      <div class="container">
+        
+       <center>
+         <h1> PAYMENT Page</h1>
+        </center>
+ <form action="E@T Hub HOME .html" onsubmit="return andy(this)"> 
+    <div class="input-group">
+    <span class="input-group-addon"> <i class="glyphicon glyphicon-usd"></i></span>
+    <input type="number" class="form-control" name="Amount" placeholder="Amount To Pay">
+    </div>
+         <div class="input-group">
+         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+         <input type="text" class="form-control" name="uname" placeholder="Name of the card holder">
+         </div>
+         <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+          <input type="number" class="form-control" name="Cnum" placeholder="CARD  NUMBER">
+          </div>
+           <div class="input-group">
+          <p> Expiration Date<i class="glyphicon glyphicon-check"></i>
+          <input   type="month"  name="month" placeholder="Expiration Date"> </p>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-question-sign"></i></span>
+          <input type="password" name="pass" placeholder="Pass Code">
+          </div>
+        
+          <h1> Shoppers Details</h1>
+         
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input type="text" class="form-control" name="Fullname" placeholder="Full Name">
+            </div><div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+              <input type="text" class="form-control" name="Address" placeholder="Address">
+              </div>
+              <center>
+         <button type="submit" class="btn btn-success">Pay</button>
+        </center>
+        </div>
+      </div>
+    </br></br></br></br></br></br></br></br></br>
+         </form>
+       
+        
+    </body>
+      
+</html>
+      
+         

@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Train Ticket Booking</title>
+        <style>
+            .basicdetails{
+                
+                
+                height: 300px;
+                width: 30%;
+                background-color: aqua;
+                text-align: center;
+            }
+            .button{
+                
+                text-align: center;
+                background-color: rgb(17, 0, 255);
+                border: none;
+            }
+                
+            .personaldetails{
+        
+                height: 320px;
+                width: 50%;
+                text-align: center;
+                
+                background-color: aqua;
+                border: none;
+
+            }
+            p{
+                color: red;
+            }
+            .quit{
+                border: none;
+                background-color:goldenrod ;
+                
+            }
+            .register{
+                border: none;
+                background-color: goldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Page</h1>
+        <div class=basicdetails>
+        <h2 style="text-align: center; color:black">Basic Details</h2>
+        <input type="text" name="username" value="User Name"><br><br>
+        <input type="password" name="password" value="Password"><br><br>
+        <input type="password" name="password" value="Conform Password"><br><br>
+        <select name="preferedlanguage">
+            <option value="preferedlanguage">Prefered Language</option>
+            <option value="preferedlanguage">urdu</option>
+            <option value="preferedlanguage">English</option>
+            <option value="preferedlanguage">Telugu</option>
+            <option value="preferedlanguage">Hindi</option>
+
+        </select><br><br>
+        <select name="securityquestion">
+           <h3 style="color:aqua;"><option value="securityquestion">Security Question</option>
+            <option value="securityquestion">What is your pet name</option>
+            <option value="securityquestion">what is your school name</option>
+            <option value="securityquestion">What is your favroute colour</option>
+            <option value="securityquestion">What is your favroute fruit</option></h3>
+
+
+        </select><br><br>
+        <input type="text" name="securityanswer" value="Security Answer"><br><br>
+
+   
+</div>
+<div class="personaldetails">
+    <h2>Personal Details</h2>
+    <input type="text" name="firstname" value="First Name">
+<input type="text" name="middlename" value="Middle Name">
+<input type="text" name="lastname" value="Last Name">
+<br><p>Info!Plese provide your exact name as per Aadhar to avail Aadhar based benifits on IRCTC eTicketing website.</p>
+<br>
+<select name="selectocupation">
+    <option name="business">Business</option>
+    <option name="privatejob">Private Job</option>
+    <option name="governmentjob">Government Job</option>
+
+</select>
+<br><br>
+<input type="radio" name="married">Married
+<input type="radio" name="unmarried">Unmarried
+<input type="date" name="date" value="Date Of Birth">
+<select name="residential">
+    <option name="india">India</option>
+    <option name="usa">USA</option>
+    <option name="africa">Africa</option>
+
+</select><br><br>
+<input type="checkbox" name="gender">Male
+<input type="checkbox" name="gender">Female
+<input type="checkbox" name="gender">Transgender
+<input type="email" value="email"><br>
+<br>
+<select name="mobile">
+    <option name="num">91</option>
+
+
+</select>
+<input type="mobile" value="mobile">
+<select name="nationality">
+    <option name="nationality">Select a Nationality</option>
+    <option name="india">Indian</option>
+    <option name="american">American</option>
+    <option name="african">african</option>
+    
+
+</select>
+
+</div><br><br>
+<button class="quit" >Cancel</button>
+<button class="register">Register</button>
+    </body>
+</html>

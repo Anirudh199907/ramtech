@@ -1,0 +1,73 @@
+<html>
+    <head>
+      <title>Bootstrap Example</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <style>
+        
+        .anirudh{
+          width: 100%;
+           height: 100%;
+           padding: auto;
+            background-image: url(food\ 2.gif);
+        }
+        h1{
+          color: #ffffff;
+        }
+        </style>
+       <script>
+function andy(form){
+  var uname= form.uname.value;
+  var pass= form.pass.value;
+  if (uname.length===0){
+    alert("Enter name")
+    return false
+  }
+  if (pass.length===0){
+    alert("Enter password")
+    return false
+  }
+}
+
+      
+    </script>
+   
+   </head>
+    <body>
+      <center>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img src="eat.jpg" alt="" width="80" height="50" class="d-inline-block align-text-top"> E@T Hub </a>           
+         </div>  
+      
+        
+      <div class="anirudh">
+      
+      <div class="container">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <h1> LOGIN Page</h1>
+        
+        <form action="order.html" onsubmit="return andy(this)"> 
+  
+         <div class="input-group">
+         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+         <input type="text" class="form-control" name="uname" placeholder="user name">
+         </div>
+           <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+         <input   type="password" class="form-control" name="pass" placeholder="password">
+         </div>
+         <button type="submit" class="btn btn-success">Login</button>
+        </div>
+      </div>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+         </form>
+   
+        </center>   
+       </body>
+      
+</html>
+      
+         

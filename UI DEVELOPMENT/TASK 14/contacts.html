@@ -1,0 +1,51 @@
+<html>
+    <head>
+      <style>
+        body{
+          width: 10%;
+          height: 10%;
+          padding: 0%;
+          background-image: url(ZOMATO.webp);
+        }
+      </style>
+       <script>
+function andy(form){
+  var email= form.email.value;
+  var number= form.number.value;
+  var Address= form.Address.value;
+
+  if (email.length===0){
+    alert("email kottu maya")
+    return false
+  }
+  if (number.length===0){
+    alert("number kottu maya")
+    return false
+  }
+  if (Address.length===0){
+    alert("Address kottu maya")
+    return false
+  }
+}
+      
+    </script>
+   
+   </head>
+<body>
+    <h1>Contact Page</h1>
+    <form action="image.html" onsubmit="return andy(this)">
+       
+     <p>  Enter Email ID: <input type="email" name="email" id="email"><br></p> 
+        <p>  Enter number: <input type="number" name="phones" id="number"></p> 
+            <p>  Address: <input type="text" name="Address"><br></p>  
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+
+            </select><br>
+
+       <p> <input type="submit"> </p>  
+     
+        </form>
+</body>
+</html>

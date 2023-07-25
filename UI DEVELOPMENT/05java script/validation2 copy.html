@@ -1,0 +1,29 @@
+<html>
+    <head>
+       <script>
+function andy(form){
+  var uname= form.uname.value;
+  var pass= form.pass.value;
+  if (uname.length===0){
+    alert("sarigga kottu maya")
+    return 
+  }
+  if (pass.length===0){
+    alert("sarigga kottu maya")
+    return 
+  }
+}
+       
+    </script>
+   </head>
+    <body>
+<form action="css file.css" onsubmit="return andy(this)"> 
+        user name : <input type="text" name="uname"><br>
+        password : <input   type="password"  name="pass"><br>
+        <input type="submit">
+      </form>
+    </body>
+      
+</html>
+      
+         
